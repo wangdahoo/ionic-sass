@@ -1,0 +1,25 @@
+{
+  "name": "ionic-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangdahoo/ionic-sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangdahoo/ionic-sass/issues"
+  },
+  "homepage": "https://github.com/wangdahoo/ionic-sass#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "gulp-sass": "^2.3.2"
+  }
+}
