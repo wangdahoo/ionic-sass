@@ -23,12 +23,12 @@ $font-family-serif:               serif !default;
 $font-family-monospace:           monospace !default;
 
 $font-family-base:                $font-family-sans-serif !default;
-$font-size-base:                  14px !default;
-$font-size-large:                 18px !default;
-$font-size-small:                 11px !default;
+$font-size-base:                  28px !default;
+$font-size-large:                 36px !default;
+$font-size-small:                 22px !default;
 
 $line-height-base:                1.428571429 !default; // 20/14
-$line-height-computed:            floor($font-size-base * $line-height-base) !default; // ~20px
+$line-height-computed:            floor($font-size-base * $line-height-base) !default; // ~40px
 $line-height-large:               1.33 !default;
 $line-height-small:               1.5 !default;
 
@@ -42,20 +42,20 @@ $base-color:                      #000 !default;
 $link-color:                      $positive !default;
 $link-hover-color:                darken($link-color, 15%) !default;
 
-$content-padding:                 10px !default;
+$content-padding:                 20px !default;
 
-$padding-base-vertical:           6px !default;
-$padding-base-horizontal:         12px !default;
+$padding-base-vertical:           12px !default;
+$padding-base-horizontal:         24px !default;
 
-$padding-large-vertical:          10px !default;
-$padding-large-horizontal:        16px !default;
+$padding-large-vertical:          20px !default;
+$padding-large-horizontal:        32px !default;
 
-$padding-small-vertical:          5px !default;
-$padding-small-horizontal:        10px !default;
+$padding-small-vertical:          10px !default;
+$padding-small-horizontal:        20px !default;
 
-$border-radius-base:              4px !default;
-$border-radius-large:             6px !default;
-$border-radius-small:             3px !default;
+$border-radius-base:              8px !default;
+$border-radius-large:             12px !default;
+$border-radius-small:             6px !default;
 
 
 // Content
@@ -68,30 +68,30 @@ $scroll-refresh-icon-color:       #666666 !default;
 // -------------------------------
 
 $button-color:                    #222 !default;
-$button-block-margin:             10px !default;
-$button-clear-padding:            6px !default;
-$button-border-radius:            4px !default;
-$button-border-width:             1px !default;
+$button-block-margin:             20px !default;
+$button-clear-padding:            12px !default;
+$button-border-radius:            8px !default;
+$button-border-width:             2px !default;
 
-$button-font-size:                16px !default;
-$button-height:                   42px !default;
-$button-padding:                  12px !default;
-$button-icon-size:                24px !default;
+$button-font-size:                32px !default;
+$button-height:                   84px !default;
+$button-padding:                  24px !default;
+$button-icon-size:                48px !default;
 
-$button-large-font-size:          20px !default;
-$button-large-height:             54px !default;
-$button-large-padding:            16px !default;
-$button-large-icon-size:          32px !default;
+$button-large-font-size:          40px !default;
+$button-large-height:             108px !default;
+$button-large-padding:            32px !default;
+$button-large-icon-size:          64px !default;
 
-$button-small-font-size:          12px !default;
-$button-small-height:             28px !default;
-$button-small-padding:            4px !default;
-$button-small-icon-size:          16px !default;
+$button-small-font-size:          24px !default;
+$button-small-height:             56px !default;
+$button-small-padding:            8px !default;
+$button-small-icon-size:          32px !default;
 
-$button-bar-button-font-size:     13px !default;
-$button-bar-button-height:        32px !default;
-$button-bar-button-padding:       8px !default;
-$button-bar-button-icon-size:     20px !default;
+$button-bar-button-font-size:     26px !default;
+$button-bar-button-height:        64px !default;
+$button-bar-button-padding:       16px !default;
+$button-bar-button-icon-size:     40px !default;
 
 $button-default-border:       transparent;
 $button-default-active-border:null;
@@ -160,10 +160,10 @@ $button-default-active-border:    $button-stable-active-border !default;
 // Bars
 // -------------------------------
 
-$bar-height:                      44px !default;
-$bar-title-font-size:             17px !default;
-$bar-padding-portrait:            5px !default;
-$bar-padding-landscape:           5px !default;
+$bar-height:                      88px !default;
+$bar-title-font-size:             34px !default;
+$bar-padding-portrait:            10px !default;
+$bar-padding-landscape:           10px !default;
 $bar-transparency:                1 !default;
 
 $bar-footer-height:               $bar-height !default;
@@ -234,12 +234,12 @@ $bar-default-active-border:       $bar-light-active-border !default;
 // Tabs
 // -------------------------------
 
-$tabs-height:                     49px !default;
-$tabs-text-font-size:             14px !default;
-$tabs-text-font-size-side-icon:   10px !default;
-$tabs-icon-size:                  32px !default;
-$tabs-badge-padding:              1px 6px !default;
-$tabs-badge-font-size:            12px !default;
+$tabs-height:                     98px !default;
+$tabs-text-font-size:             28px !default;
+$tabs-text-font-size-side-icon:   20px !default;
+$tabs-icon-size:                  64px !default;
+$tabs-badge-padding:              2px 12px !default;
+$tabs-badge-font-size:            24px !default;
 
 $tabs-light-bg:                   $button-light-bg !default;
 $tabs-light-border:               $button-light-border !default;
@@ -281,40 +281,40 @@ $tabs-default-bg:                 $tabs-stable-bg !default;
 $tabs-default-border:             $tabs-stable-border !default;
 $tabs-default-text:               $tabs-stable-text !default;
 
-$tab-item-max-width:              150px !default;
+$tab-item-max-width:              300px !default;
 
 $tabs-off-opacity:                0.4 !default;
 $tabs-striped-off-opacity:        $tabs-off-opacity !default;
 $tabs-striped-off-color:          #000 !default;
-$tabs-striped-border-width:       2px !default;
+$tabs-striped-border-width:       4px !default;
 
 
 // Items
 // -------------------------------
 
-$item-font-size:                  16px !default;
-$item-border-width:               1px !default;
-$item-padding:                    16px !default;
+$item-font-size:                  32px !default;
+$item-border-width:               2px !default;
+$item-padding:                    32px !default;
 
-$item-button-font-size:           18px !default;
-$item-button-line-height:         32px !default;
-$item-icon-font-size:             32px !default;
-$item-icon-fill-font-size:        28px !default;
+$item-button-font-size:           36px !default;
+$item-button-line-height:         64px !default;
+$item-icon-font-size:             64px !default;
+$item-icon-fill-font-size:        56px !default;
 
 $item-icon-accessory-color:       #ccc !default;
-$item-icon-accessory-font-size:   16px !default;
+$item-icon-accessory-font-size:   32px !default;
 
-$item-avatar-width:               40px !default;
-$item-avatar-height:              40px !default;
+$item-avatar-width:               80px !default;
+$item-avatar-height:              80px !default;
 $item-avatar-border-radius:       50% !default;
 
-$item-thumbnail-width:            80px !default;
-$item-thumbnail-height:           80px !default;
-$item-thumbnail-margin:           10px !default;
+$item-thumbnail-width:            160px !default;
+$item-thumbnail-height:           160px !default;
+$item-thumbnail-margin:           20px !default;
 
 $item-divider-bg:                 #f5f5f5 !default;
 $item-divider-color:              #222 !default;
-$item-divider-padding:            5px 15px !default;
+$item-divider-padding:            10px 30px !default;
 
 $item-light-bg:                   $button-light-bg !default;
 $item-light-border:               $button-light-border !default;
@@ -387,15 +387,15 @@ $item-remove-transition-duration:   300ms !default;
 $item-remove-transition-function:   ease-in !default;
 $item-remove-descendents-transition-function:  cubic-bezier(.25,.81,.24,1) !default;
 
-$item-left-edit-left:             8px !default;  // item's left side edit's "left" property
+$item-left-edit-left:             16px !default;  // item's left side edit's "left" property
 
-$item-right-edit-open-width:      50px !default;
-$item-left-edit-open-width:       50px !default;
+$item-right-edit-open-width:      100px !default;
+$item-left-edit-open-width:       100px !default;
 
-$item-delete-icon-size:           24px !default;
+$item-delete-icon-size:           48px !default;
 $item-delete-icon-color:          $assertive !default;
 
-$item-reorder-icon-size:          32px !default;
+$item-reorder-icon-size:          64px !default;
 $item-reorder-icon-color:         $dark !default;
 
 
@@ -404,8 +404,8 @@ $item-reorder-icon-color:         $dark !default;
 
 $list-header-bg:                  transparent !default;
 $list-header-color:               #222 !default;
-$list-header-padding:             5px 15px !default;
-$list-header-margin-top:          20px !default;
+$list-header-padding:             10px 30px !default;
+$list-header-margin-top:          40px !default;
 
 
 // Cards
@@ -415,12 +415,12 @@ $card-header-bg:                  #F5F5F5 !default;
 $card-body-bg:                    #fff !default;
 $card-footer-bg:                  #F5F5F5 !default;
 
-$card-padding:                    10px !default;
-$card-border-width:               1px !default;
+$card-padding:                    20px !default;
+$card-border-width:               2px !default;
 
 $card-border-color:               #ccc !default;
-$card-border-radius:              2px !default;
-$card-box-shadow:                 0 1px 3px rgba(0, 0, 0, .3) !default;
+$card-border-radius:              4px !default;
+$card-box-shadow:                 0 2px 6px rgba(0, 0, 0, .3) !default;
 
 
 // Forms
@@ -444,16 +444,16 @@ $input-color-placeholder:         lighten($dark, 40%) !default;
 // -------------------------------
 
 $progress-width:                  100% !default;
-$progress-margin:                 15px auto !default;
+$progress-margin:                 30px auto !default;
 
 
 // Toggle
 // -------------------------------
 
-$toggle-width:                    51px !default;
-$toggle-height:                   31px !default;
-$toggle-border-width:             2px !default;
-$toggle-border-radius:            20px !default;
+$toggle-width:                    102px !default;
+$toggle-height:                   62px !default;
+$toggle-border-width:             4px !default;
+$toggle-border-radius:            40px !default;
 
 $toggle-handle-width:             $toggle-height - ($toggle-border-width * 2) !default;
 $toggle-handle-height:            $toggle-handle-width !default;
@@ -489,16 +489,16 @@ $toggle-handle-on-bg-color:       $toggle-handle-off-bg-color !default;
 
 $toggle-transition-duration:      .3s !default;
 
-$toggle-hit-area-expansion:   5px;
+$toggle-hit-area-expansion:   10px;
 
 
 // Checkbox
 // -------------------------------
 
-$checkbox-width:                  28px !default;
-$checkbox-height:                 28px !default;
+$checkbox-width:                  56px !default;
+$checkbox-height:                 56px !default;
 $checkbox-border-radius:          $checkbox-width !default;
-$checkbox-border-width:           1px !default;
+$checkbox-border-width:           2px !default;
 
 $checkbox-off-bg-color:           #fff !default;
 $checkbox-off-border-light:       $button-light-border !default;
@@ -523,19 +523,19 @@ $checkbox-off-border-default:     $button-light-border !default;
 $checkbox-on-bg-default:          $positive !default;
 $checkbox-on-border-default:      $positive !default;
 
-$checkbox-check-width:            1px !default;
+$checkbox-check-width:            2px !default;
 $checkbox-check-color:            #fff !default;
 
 
 // Range
 // -------------------------------
 
-$range-track-height:              2px !default;
-$range-slider-width:              28px !default;
-$range-slider-height:             28px !default;
+$range-track-height:              4px !default;
+$range-slider-width:              56px !default;
+$range-slider-height:             56px !default;
 $range-slider-border-radius:      50% !default;
-$range-icon-size:                 24px !default;
-$range-slider-box-shadow:         0 0 2px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,0.2) !default;
+$range-icon-size:                 48px !default;
+$range-slider-box-shadow:         0 0 4px rgba(0,0,0,.3), 0 6px 10px rgba(0,0,0,0.2) !default;
 
 $range-light-track-bg:            $button-light-border !default;
 $range-stable-track-bg:           $button-stable-border !default;
@@ -553,10 +553,10 @@ $range-default-track-bg:          #ccc !default;
 // -------------------------------
 
 $menu-bg:                         #fff !default;
-$menu-width:                      275px !default;
+$menu-width:                      550px !default;
 $menu-animation-speed:            200ms !default;
 
-$menu-side-shadow:                -1px 0px 2px rgba(0, 0, 0, 0.2), 1px 0px 2px rgba(0,0,0,0.2) !default;
+$menu-side-shadow:                -2px 0px 4px rgba(0, 0, 0, 0.2), 2px 0px 4px rgba(0,0,0,0.2) !default;
 
 
 // Modals
@@ -566,12 +566,12 @@ $modal-bg-color:                  #fff !default;
 $modal-backdrop-bg-active:        #000 !default;
 $modal-backdrop-bg-inactive:      rgba(0,0,0,0) !default;
 
-$modal-inset-mode-break-point:    680px !default;  // @media min-width
+$modal-inset-mode-break-point:    1360px !default;  // @media min-width
 $modal-inset-mode-top:            20% !default;
 $modal-inset-mode-right:          20% !default;
 $modal-inset-mode-bottom:         20% !default;
 $modal-inset-mode-left:           20% !default;
-$modal-inset-mode-min-height:     240px !default;
+$modal-inset-mode-min-height:     480px !default;
 
 
 // Popovers
@@ -580,35 +580,35 @@ $modal-inset-mode-min-height:     240px !default;
 $popover-bg-color:                $light !default;
 $popover-backdrop-bg-active:      rgba(0,0,0,0.1) !default;
 $popover-backdrop-bg-inactive:    rgba(0,0,0,0) !default;
-$popover-width:                   220px !default;
-$popover-height:                  280px !default;
-$popover-large-break-point:       680px !default;
-$popover-large-width:             360px !default;
+$popover-width:                   440px !default;
+$popover-height:                  560px !default;
+$popover-large-break-point:       1360px !default;
+$popover-large-width:             720px !default;
 
-$popover-box-shadow:              0 1px 3px rgba(0,0,0,0.4) !default;
-$popover-border-radius:           2px !default;
+$popover-box-shadow:              0 2px 6px rgba(0,0,0,0.4) !default;
+$popover-border-radius:           4px !default;
 
-$popover-box-shadow-ios:          0 0 40px rgba(0,0,0,0.08) !default;
-$popover-border-radius-ios:       10px !default;
+$popover-box-shadow-ios:          0 0 80px rgba(0,0,0,0.08) !default;
+$popover-border-radius-ios:       20px !default;
 
 $popover-bg-color-android:        #fafafa !default;
-$popover-box-shadow-android:      0 2px 6px rgba(0,0,0,0.35) !default;
+$popover-box-shadow-android:      0 4px 12px rgba(0,0,0,0.35) !default;
 
 
 // Grids
 // -------------------------------
 
-$grid-padding-width:              10px !default;
-$grid-responsive-sm-break:        567px !default;  // smaller than landscape phone
-$grid-responsive-md-break:        767px !default;  // smaller than portrait tablet
-$grid-responsive-lg-break:        1023px !default; // smaller than landscape tablet
+$grid-padding-width:              20px !default;
+$grid-responsive-sm-break:        2*567px !default;  // smaller than landscape phone
+$grid-responsive-md-break:        2*767px !default;  // smaller than portrait tablet
+$grid-responsive-lg-break:        2*1023px !default; // smaller than landscape tablet
 
 
 // Action Sheets
 // -------------------------------
 
-$sheet-margin:                    8px !default;
-$sheet-border-radius:             4px !default;
+$sheet-margin:                    16px !default;
+$sheet-border-radius:             8px !default;
 
 $sheet-options-bg-color:          #f1f2f3 !default;
 $sheet-options-bg-active-color:   #e4e5e7 !default;
@@ -619,7 +619,7 @@ $sheet-options-border-color:      #d1d3d6 !default;
 // Popups
 // -------------------------------
 
-$popup-width:                     250px !default;
+$popup-width:                     500px !default;
 $popup-enter-animation:           superScaleIn !default;
 $popup-enter-animation-duration:  0.2s !default;
 $popup-leave-animation-duration:  0.1s !default;
@@ -627,9 +627,9 @@ $popup-leave-animation-duration:  0.1s !default;
 $popup-border-radius:             0px !default;
 $popup-background-color:          rgba(255,255,255,0.9) !default;
 
-$popup-button-border-radius:      2px !default;
-$popup-button-line-height:        20px !default;
-$popup-button-min-height:         45px !default;
+$popup-button-border-radius:      4px !default;
+$popup-button-line-height:        40px !default;
+$popup-button-min-height:         90px !default;
 
 
 // Loading
@@ -637,9 +637,9 @@ $popup-button-min-height:         45px !default;
 
 $loading-text-color:              #fff !default;
 $loading-bg-color:                rgba(0,0,0,0.7) !default;
-$loading-padding:                 20px !default;
-$loading-border-radius:           5px !default;
-$loading-font-size:               15px !default;
+$loading-padding:                 40px !default;
+$loading-border-radius:           10px !default;
+$loading-font-size:               30px !default;
 
 $loading-backdrop-fadein-duration:0.1s !default;
 $loading-backdrop-bg-color:       rgba(0,0,0,0.4) !default;
@@ -648,10 +648,10 @@ $loading-backdrop-bg-color:       rgba(0,0,0,0.4) !default;
 // Badges
 // -------------------------------
 
-$badge-font-size:                 14px !default;
-$badge-line-height:               16px !default;
+$badge-font-size:                 28px !default;
+$badge-line-height:               32px !default;
 $badge-font-weight:               bold !default;
-$badge-border-radius:             10px !default;
+$badge-border-radius:             20px !default;
 
 $badge-light-bg:                  $button-light-bg !default;
 $badge-light-text:                $button-light-text !default;
@@ -687,8 +687,8 @@ $badge-default-text:              #AAAAAA !default;
 // Spinners
 // -------------------------------
 
-$spinner-width:                   28px !default;
-$spinner-height:                  28px !default;
+$spinner-width:                   56px !default;
+$spinner-height:                  56px !default;
 
 $spinner-light-stroke:            $light !default;
 $spinner-light-fill:              $light !default;
@@ -761,4 +761,4 @@ $z-index-click-block:             99999 !default;
 // Platform
 // -------------------------------
 
-$ios-statusbar-height:           20px !default;
+$ios-statusbar-height:           40px !default;
