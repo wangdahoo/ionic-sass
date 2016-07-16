@@ -4,7 +4,7 @@ define([], function () {
   var pages = [
     {
       'name': 'buttons',
-      'serf': 'pageHeader'
+      'serf': 'pageButtons'
     }
   ];
 

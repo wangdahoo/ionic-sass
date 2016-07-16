@@ -32,8 +32,8 @@ define([
           })
 
           // Header
-          .state('pageHeader', {
-            url: '/page/header',
+          .state('pageButtons', {
+            url: '/page/buttons',
             controller: 'PageButtonsCtrl',
             templateUrl: 'view/page_buttons.html'
           })
