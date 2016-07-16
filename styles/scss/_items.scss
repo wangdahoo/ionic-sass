@@ -10,7 +10,7 @@
   z-index: $z-index-item; // Make sure the borders and stuff don't get hidden by children
   display: block;
 
-  margin: $item-border-width * -1;
+  margin: $item-border-width * -2;
   padding: $item-padding;
 
   border-width: $item-border-width;
@@ -18,26 +18,26 @@
   font-size: $item-font-size;
 
   h2 {
-    margin: 0 0 2px 0;
-    font-size: 16px;
+    margin: 0 0 4px 0;
+    font-size: 32px;
     font-weight: normal;
   }
   h3 {
-    margin: 0 0 4px 0;
-    font-size: 14px;
+    margin: 0 0 8px 0;
+    font-size: 28px;
   }
   h4 {
-    margin: 0 0 4px 0;
-    font-size: 12px;
+    margin: 0 0 8px 0;
+    font-size: 24px;
   }
   h5, h6 {
     margin: 0 0 3px 0;
-    font-size: 10px;
+    font-size: 20px;
   }
   p {
     color: #666;
-    font-size: 14px;
-    margin-bottom: 2px;
+    font-size: 28px;
+    margin-bottom: 4px;
   }
 
   h1:last-child,
@@ -58,13 +58,13 @@
     right: ($item-padding * 2);
   }
   &.item-button-right .badge {
-    right: ($item-padding * 2) + 35;
+    right: ($item-padding * 2) + 70;
   }
   &.item-divider .badge {
     top: ceil($item-padding / 2);
   }
   .badge + .badge {
-    margin-right: 5px;
+    margin-right: 10px;
   }
 
   // Different themes for items
@@ -199,7 +199,7 @@ button.item.item-complex {
 .item-radio .item-content {
   position: relative;
   z-index: $z-index-item;
-  padding: $item-padding (ceil( ($item-padding * 3) + ($item-padding / 3) ) - 5) $item-padding $item-padding;
+  padding: $item-padding (ceil( ($item-padding * 3) + ($item-padding / 3) ) - 10) $item-padding $item-padding;
   border: none;
   background-color: $item-default-bg;
 }
@@ -326,8 +326,8 @@ a.item-content {
 }
 
 .item .fill-icon {
-  min-width: $item-icon-fill-font-size + 2;
-  min-height: $item-icon-fill-font-size + 2;
+  min-width: $item-icon-fill-font-size + 4;
+  min-height: $item-icon-fill-font-size + 4;
   font-size: $item-icon-fill-font-size;
 }
 
@@ -408,11 +408,11 @@ a.item-content {
     position: relative;
     left: auto;
     width: auto;
-    line-height: $item-icon-font-size - 1;
+    line-height: $item-icon-font-size - 2;
   }
 
   > .button {
-    margin: 0px 2px;
+    margin: 0px 4px;
     min-height: $item-icon-font-size + ($button-border-width * 2);
     font-size: $item-button-font-size;
     line-height: $item-button-line-height;
@@ -447,7 +447,7 @@ button.item.item-button-right {
   }
 
   > .button {
-    margin: 0px 2px;
+    margin: 0px 4px;
     min-width: $item-icon-font-size + ($button-border-width * 2);
     min-height: $item-icon-font-size + ($button-border-width * 2);
     font-size: $item-button-font-size;
@@ -595,7 +595,7 @@ button.item.item-button-right {
 .item-divider {
   padding-top: ceil($item-padding / 2);
   padding-bottom: ceil($item-padding / 2);
-  min-height: 30px;
+  min-height: 60px;
   background-color: $item-divider-bg;
   color: $item-divider-color;
   font-weight: 500;
@@ -603,10 +603,10 @@ button.item.item-button-right {
 
 .platform-ios .item-divider-platform,
 .item-divider-ios {
-  padding-top: 26px;
+  padding-top: 52px;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 26px;
   background-color: #efeff4;
   color: #555;
 }
@@ -614,7 +614,7 @@ button.item.item-button-right {
 .platform-android .item-divider-platform,
 .item-divider-android {
   font-weight: 300;
-  font-size: 13px;
+  font-size: 26px;
 }
 
 
@@ -624,7 +624,7 @@ button.item.item-button-right {
 .item-note {
   float: right;
   color: #aaa;
-  font-size: 14px;
+  font-size: 28px;
 }
 
 
@@ -668,8 +668,8 @@ button.item.item-button-right {
   }
 
   &.ng-leave.ng-leave-active ~ ion-item:not(.ng-leave) {
-    -webkit-transform: translate3d(0, unquote('-webkit-calc(-100% + 1px)'), 0);
-    transform: translate3d(0, calc(-100% + 1px), 0);
+    -webkit-transform: translate3d(0, unquote('-webkit-calc(-100% + 2px)'), 0);
+    transform: translate3d(0, calc(-100% + 2px), 0);
     @include transition-duration( $item-remove-transition-duration );
     @include transition-timing-function( $item-remove-descendents-transition-function );
     @include transition-property( all );
@@ -743,7 +743,7 @@ button.item.item-button-right {
   width: $item-right-edit-open-width *  1.5;
   height: 100%;
   background: inherit;
-  padding-left: 20px;
+  padding-left: 40px;
 
   .button {
     min-width: $item-right-edit-open-width;
@@ -787,7 +787,7 @@ button.item.item-button-right {
   top: 0;
   z-index: $z-index-item-reordering;
   width: 100%;
-  box-shadow: 0px 0px 10px 0px #aaa;
+  box-shadow: 0px 0px 20px 0px #aaa;
 
   .item-reorder {
     z-index: $z-index-item-reordering;

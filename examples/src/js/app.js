@@ -1,7 +1,7 @@
 define([
   'app.services',
   'controllers/index',
-  'controllers/page.header'
+  'controllers/page.buttons'
 ], function () {
 
   var app = angular.module('myApp', ['appServices', 'appControllers']);
@@ -34,8 +34,8 @@ define([
           // Header
           .state('pageHeader', {
             url: '/page/header',
-            controller: 'PageHeaderCtrl',
-            templateUrl: 'view/page_header.html'
+            controller: 'PageButtonsCtrl',
+            templateUrl: 'view/page_buttons.html'
           })
 
         ;

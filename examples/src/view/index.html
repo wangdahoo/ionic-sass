@@ -1,1 +1,15 @@
-{{ title }}
+<div class="bar bar-header bar-assertive">
+  <h1 class="title">Components</h1>
+</div>
+
+<div class="scroll-content has-header stable-bg">
+  <div class="scroll padding-top">
+    <div class="list">
+      <a class="item item-icon-right dark" ng-repeat="p in pages" ui-sref="{{ p.serf }}">
+        {{ p.name }}
+        <i class="icon ion-ios-arrow-right grey"></i>
+      </a>
+    </div>
+  </div>
+</div>
+

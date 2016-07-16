@@ -9,12 +9,12 @@
   padding-top: $item-border-width;
   padding-bottom: $item-border-width;
   padding-left: 0; // reset padding because ul and ol
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .list:last-child {
   margin-bottom: 0px;
   &.card{
-    margin-bottom:40px;
+    margin-bottom:80px;
   }
 }
 
@@ -34,8 +34,8 @@
 
 // when its a card make sure it doesn't duplicate top and bottom borders
 .card.list .list-item {
-  padding-right: 1px;
-  padding-left: 1px;
+  padding-right: 2px;
+  padding-left: 2px;
 }
 
 
@@ -103,7 +103,7 @@
 
 .card .item:last-child,
 .list-inset .item:last-child {
-  margin-bottom: $item-border-width * -1;
+  margin-bottom: $item-border-width * -2;
 }
 
 .card .item,
@@ -114,7 +114,7 @@
   margin-left: 0;
 
   &.item-input input {
-    padding-right: 44px;
+    padding-right: 88px;
   }
 }
 .padding-left > .list .item {

@@ -18,6 +18,7 @@
   "homepage": "https://github.com/wangdahoo/ionic-sass#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
     "gulp-cli": "^1.2.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",

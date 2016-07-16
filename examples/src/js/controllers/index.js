@@ -3,9 +3,11 @@ define(['app.controllers'], function (appControllers) {
   console.info('Index Controller');
 
   appControllers
-    .controller('IndexCtrl', ['$scope', function ($scope) {
+    .controller('IndexCtrl', ['$scope', '$pageList', function ($scope, $pageList) {
 
-      $scope.title = 'Index Page'
+      $scope.title = 'Components';
+
+      $scope.pages = $pageList.all();
 
     }]);
 
