@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Examples</title>
 </head>
-<body ng-controller="HelloController">
-<h1 ng-bind="message"></h1>
+<body>
+
+<section ui-view ng-if="loaded"></section>
+
 <script data-main="main.js" src="../node_modules/requirejs/require.js"></script>
 </body>
 </html>

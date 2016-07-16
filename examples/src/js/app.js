@@ -1,17 +1,56 @@
 define([
-  'angular',
-  'angular-animate',
-  'angular-sanitize',
-  'ui-router'
-], function (angular) {
+  'app.services',
+  'controllers/index',
+  'controllers/page.header'
+], function () {
 
-  var app = angular.module('myApp', ['ngAnimate', 'ngSanitize', 'ui.router']);
+  var app = angular.module('myApp', ['appServices', 'appControllers']);
 
-  app.controller('HelloController', ['$scope', function ($scope) {
+  app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
+      function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
-    $scope.message = 'hello!';
+        $stateProvider
 
-  }]);
+        //.decorator('views', function (state, parent) {
+        //  var result = {}, views = parent(state);
+        //  angular.forEach(views, function (config, name) {
+        //    if (config.templateName)
+        //      config.templateUrl = function () {
+        //        return 'view/' + config.templateName + '.html';
+        //      };
+        //
+        //    result[name] = config;
+        //  });
+        //  return result;
+        //})
+
+        // 首页
+          .state('pages', {
+            url: '/pages',
+            controller: 'IndexCtrl',
+            templateUrl: 'view/index.html'
+          })
+
+          // Header
+          .state('pageHeader', {
+            url: '/page/header',
+            controller: 'PageHeaderCtrl',
+            templateUrl: 'view/page_header.html'
+          })
+
+        ;
+
+        $urlRouterProvider.otherwise('/pages');
+        //$locationProvider.html5Mode(true);
+
+      }])
+
+    .run(['$rootScope', function ($rootScope) {
+
+      $rootScope.loaded = true;
+
+    }])
+  ;
 
   return app;
 });

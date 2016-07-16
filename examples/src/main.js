@@ -28,6 +28,11 @@ require.config({
     'ui-router': {
       deps: ['angular'],
       exports: 'ui-router'
+    },
+
+    'app': {
+      deps: ['angular-animate', 'angular-sanitize', 'ui-router'],
+      exports: 'app'
     }
   }
 });
@@ -39,5 +44,5 @@ require([
   'ui-router',
   'app'
 ], function (angular) {
-  angular.bootstrap(document.body, ['myApp']);
+  angular.bootstrap(window.document, ['myApp']);
 });
