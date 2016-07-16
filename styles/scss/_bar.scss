@@ -58,9 +58,9 @@
       margin-top: -1px;
 
       input {
-        padding-left: 8px;
+        padding-left: 16px;
         width: 94%;
-        height: 28px;
+        height: 56px;
         background: transparent;
       }
     }
@@ -132,9 +132,9 @@
     z-index: $z-index-bar-title;
     overflow: hidden;
 
-    margin: 0 10px;
+    margin: 0 20px;
 
-    min-width: 30px;
+    min-width: 60px;
     height: $bar-height - 1;
 
     text-align: center;
@@ -174,8 +174,8 @@
     &.icon:before,
     &.icon-left:before,
     &.icon-right:before {
-      padding-right: 2px;
-      padding-left: 2px;
+      padding-right: 4px;
+      padding-left: 4px;
       font-size: $button-bar-button-icon-size;
       line-height: $button-bar-button-height;
     }
@@ -192,8 +192,8 @@
       }
     }
     &.button-clear {
-      padding-right: 2px;
-      padding-left: 2px;
+      padding-right: 4px;
+      padding-left: 4px;
       font-weight: 300;
       font-size: $bar-title-font-size;
 
@@ -208,7 +208,7 @@
 
     &.back-button {
       display: block;
-      margin-right: 5px;
+      margin-right: 10px;
       padding: 0;
       white-space: nowrap;
       font-weight: 400;
@@ -222,13 +222,13 @@
 
   .button-bar > .button,
   .buttons > .button {
-    min-height: $button-bar-button-height - 1;
+    min-height: $button-bar-button-height - 2;
     line-height: $button-bar-button-height;
   }
 
   .button-bar + .button,
   .button + .button-bar {
-    margin-left: 5px;
+    margin-left: 10px;
   }
 
   // Android 4.4 messes with the display property
@@ -241,11 +241,11 @@
     display: inline-block;
   }
   .buttons-left span {
-    margin-right: 5px;
+    margin-right: 10px;
     display: inherit;
   }
   .buttons-right span {
-    margin-left: 5px;
+    margin-left: 10px;
     display: inherit;
   }
 
@@ -256,9 +256,9 @@
   .buttons.pull-right,
   .title + .buttons {
     position: absolute;
-    top: 5px;
-    right: 5px;
-    bottom: 5px;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
   }
 
 }
@@ -272,11 +272,11 @@
   .bar {
 
     .back-button .icon:before {
-      font-size: 24px;
+      font-size: 48px;
     }
 
     .title {
-      font-size: 19px;
+      font-size: 38px;
       line-height: $bar-height;
     }
   }
@@ -368,7 +368,7 @@
   }
 
   .title {
-    height: $bar-footer-height - 1;
+    height: $bar-footer-height - 2;
     line-height: $bar-footer-height;
   }
 }
@@ -384,7 +384,7 @@
   height: $bar-subheader-height;
 
   .title {
-    height: $bar-subheader-height - 1;
+    height: $bar-subheader-height - 2;
     line-height: $bar-subheader-height;
   }
 }
@@ -394,7 +394,7 @@
   height: $bar-subfooter-height;
 
   .title {
-    height: $bar-subfooter-height - 1;
+    height: $bar-subfooter-height - 2;
     line-height: $bar-subfooter-height;
   }
 }
