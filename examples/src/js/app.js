@@ -1,7 +1,7 @@
 define([
   'app.services',
   'controllers/index',
-  'controllers/page.buttons'
+  'controllers/pages'
 ], function () {
 
   var app = angular.module('myApp', ['appServices', 'appControllers']);
@@ -36,6 +36,13 @@ define([
             url: '/page/buttons',
             controller: 'PageButtonsCtrl',
             templateUrl: 'view/page_buttons.html'
+          })
+
+          //
+          .state('pageForms', {
+            url: '/page/forms',
+            controller: 'PageFormsCtrl',
+            templateUrl: 'view/page_forms.html'
           })
 
         ;

@@ -5,6 +5,10 @@ define([], function () {
     {
       'name': 'buttons',
       'serf': 'pageButtons'
+    },
+    {
+      'name': 'Forms',
+      'serf': 'pageForms'
     }
   ];
 

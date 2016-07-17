@@ -7,8 +7,15 @@ define(['app.controllers'], function (appControllers) {
 
       $scope.title = 'Buttons';
 
+    }])
+
+    .controller('PageFormsCtrl', ['$scope', function ($scope) {
+
+      $scope.title = 'Forms';
+
+    }])
 
 
-    }]);
+  ;
 
 });
