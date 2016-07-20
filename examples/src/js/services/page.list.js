@@ -9,7 +9,11 @@ define([], function () {
     {
       'name': 'Forms',
       'serf': 'pageForms'
-    }
+    },
+    {
+      'name': 'List',
+      'serf': 'pageLists'
+    },
   ];
 
   return {

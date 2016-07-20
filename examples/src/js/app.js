@@ -31,19 +31,27 @@ define([
             templateUrl: 'view/index.html'
           })
 
-          // Header
+          // 按钮
           .state('pageButtons', {
             url: '/page/buttons',
             controller: 'PageButtonsCtrl',
             templateUrl: 'view/page_buttons.html'
           })
 
-          //
+          // 表单
           .state('pageForms', {
             url: '/page/forms',
             controller: 'PageFormsCtrl',
             templateUrl: 'view/page_forms.html'
           })
+
+          // 列表
+          .state('pageLists', {
+            url: '/page/lists',
+            controller: 'PageListsCtrl',
+            templateUrl: 'view/page_lists.html'
+          })
+
 
         ;
 
