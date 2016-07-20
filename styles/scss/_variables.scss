@@ -93,20 +93,20 @@ $button-bar-button-height:        64px !default;
 $button-bar-button-padding:       16px !default;
 $button-bar-button-icon-size:     40px !default;
 
-$button-default-border:       transparent;
-$button-default-active-border:null;
+$button-default-border:           transparent;
+$button-default-active-border:    transparent;
 
 $button-light-bg:                 $light !default;
 $button-light-text:               #444 !default;
-$button-light-border:             #ddd !default;
-$button-light-active-bg:          #fafafa !default;
-$button-light-active-border:      #ccc !default;
+$button-light-border:             #f5f5f5 !default;
+$button-light-active-bg:          #f5f5f5 !default;
+$button-light-active-border:      #f5f5f5 !default;
 
 $button-stable-bg:                $stable !default;
 $button-stable-text:              #444 !default;
-$button-stable-border:            #b2b2b2 !default;
+$button-stable-border:            $stable !default;
 $button-stable-active-bg:         #e5e5e5 !default;
-$button-stable-active-border:     #a2a2a2 !default;
+$button-stable-active-border:     $stable !default;
 
 $button-positive-bg:              $positive !default;
 $button-positive-text:            #fff !default;

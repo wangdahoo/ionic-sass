@@ -13,7 +13,7 @@ gulp.task('fonts', ['clean:all'], function () {
     .pipe(gulp.dest('./dist/fonts'));
 });
 
-gulp.task('default', function () {
+gulp.task('default', ['fonts'], function () {
   return gulp.src('./styles/scss/ionic.scss')
     // .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(sass())
