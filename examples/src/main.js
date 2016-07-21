@@ -4,6 +4,7 @@ require.config({
   baseUrl: 'js',
 
   paths: {
+    'bezier': libPath + 'bezier-js/bezier',
     'angular': libPath + 'angular/angular.min',
     'angular-animate': libPath + 'angular-animate/angular-animate.min',
     'angular-sanitize': libPath + 'angular-sanitize/angular-sanitize.min',
@@ -11,6 +12,10 @@ require.config({
   },
 
   shim: {
+    "bezier": {
+      exports: 'bezier'
+    },
+
     'angular': {
       exports: 'angular'
     },
