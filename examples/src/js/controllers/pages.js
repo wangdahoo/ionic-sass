@@ -53,6 +53,14 @@ define(['app.controllers'], function (appControllers) {
       }
     }])
 
+    .controller('PageInputsCtrl', ['$scope', function ($scope) {
+      $scope.title = 'Inputs';
+
+
+
+    }])
+
   ;
 
 });
+

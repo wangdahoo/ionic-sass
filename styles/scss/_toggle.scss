@@ -98,14 +98,14 @@
   background-color: $toggle-handle-off-bg-color;
   top: $toggle-border-width + $toggle-hit-area-expansion;
   left: $toggle-border-width + $toggle-hit-area-expansion;
-  box-shadow: 0 2px 7px rgba(0,0,0,.35), 0 1px 1px rgba(0,0,0,.15);
+  box-shadow: 0 8px 28px rgba(0,0,0,.35), 0 2px 2px rgba(0,0,0,.15);
 
   &:before {
     // used to create a larger (but hidden) hit area to slide the handle
     position: absolute;
-    top: -4px;
-    left: ( ($toggle-handle-width / 2) * -1) - 8;
-    padding: ($toggle-handle-height / 2) + 5 ($toggle-handle-width + 7);
+    top: -8px;
+    left: ( ($toggle-handle-width / 2) * -2) - 16;
+    padding: ($toggle-handle-height / 2) + 10 ($toggle-handle-width + 14);
     content: " ";
   }
 }
@@ -133,7 +133,7 @@
 .item-toggle .toggle {
   // position the toggle to the right within a list item
   position: absolute;
-  top: ($item-padding / 2) + 2;
+  top: ($item-padding / 2) + 4;
   right: $item-padding;
   z-index: $z-index-item-toggle;
 }
@@ -146,26 +146,26 @@
 
   .track {
     border: 0;
-    width: 34px;
-    height: 15px;
+    width: 68px;
+    height: 30px;
     background: #9e9e9e;
   }
   input:checked + .track {
     background: rgba(0,150,137,.5);
   }
   .handle {
-    top: 2px;
-    left: 4px;
-    width: 21px;
-    height: 21px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.25);
+    top: 4px;
+    left: 8px;
+    width: 42px;
+    height: 42px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.25);
   }
   input:checked + .track .handle {
-    @include translate3d(16px, 0, 0);
+    @include translate3d(32px, 0, 0);
     background: rgb(0,150,137);
   }
   &.item-toggle .toggle {
-    top: 19px;
+    top: 38px;
   }
 
   .toggle-light  {

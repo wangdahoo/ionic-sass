@@ -3,7 +3,7 @@ define([], function () {
 
   var pages = [
     {
-      'name': 'buttons',
+      'name': 'Buttons',
       'serf': 'pageButtons'
     },
     {
@@ -11,8 +11,12 @@ define([], function () {
       'serf': 'pageForms'
     },
     {
-      'name': 'List',
+      'name': 'Lists',
       'serf': 'pageLists'
+    },
+    {
+      'name': 'Inputs',
+      'serf': 'pageInputs'
     },
   ];
 

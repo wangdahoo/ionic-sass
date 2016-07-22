@@ -52,7 +52,12 @@ define([
             templateUrl: 'view/page_lists.html'
           })
 
-
+          // 表单控件
+          .state('pageInputs', {
+            url: '/page/inputs',
+            controller: 'PageInputsCtrl',
+            templateUrl: 'view/page_inputs.html'
+          })
         ;
 
         $urlRouterProvider.otherwise('/pages');
