@@ -55,7 +55,14 @@ define(['app.controllers'], function (appControllers) {
 
     .controller('PageInputsCtrl', ['$scope', function ($scope) {
       $scope.title = 'Inputs';
+      $scope.checkbox = {
+        val: 1
+      }
 
+      $scope.checkboxChanged = function (val) {
+        console.log(val);
+        $scope.checkbox.val = val;
+      }
 
 
     }])

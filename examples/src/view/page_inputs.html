@@ -13,7 +13,7 @@
       <!-- Toggle -->
       <li class="item item-toggle">
         通知
-        <label class="toggle toggle-assertive">
+        <label class="toggle toggle-positive">
           <input type="checkbox">
           <div class="track">
             <div class="handle"></div>
@@ -23,7 +23,7 @@
 
     </ul>
 
-    <!-- range -->
+    <!-- Range -->
     <div class="item range">
       <i class="icon ion-volume-low"></i>
       <input type="range" name="volume">
@@ -38,6 +38,32 @@
       </div>
     </div>
 
+    <!-- Checkbox -->
+    <label class="item item-checkbox">
+      <div class="checkbox checkbox-input-hidden disable-pointer-events checkbox-circle">
+        <input type="checkbox" ng-model="checkbox.val" ng-change="checkboxChanged(1)">
+        <i class="ion" style="font-size: 54px"
+           ng-class="{'ion-ios-circle-outline grey': checkbox.val!=1,
+           'ion-ios-checkmark assertive': checkbox.val==1}"></i>
+      </div>
+
+      <div class="item-content disable-pointer-events">
+        <span>选项 1</span>
+      </div>
+    </label>
+
+    <label class="item item-checkbox">
+      <div class="checkbox checkbox-input-hidden disable-pointer-events checkbox-circle">
+        <input type="checkbox" ng-model="checkbox.val" ng-change="checkboxChanged(2)">
+        <i class="ion" style="font-size: 56px"
+           ng-class="{'ion-ios-circle-outline grey': checkbox.val!=2,
+           'ion-ios-checkmark assertive': checkbox.val==2}"></i>
+      </div>
+
+      <div class="item-content disable-pointer-events">
+        <span>选项 2</span> {{filter.blue}}
+      </div>
+    </label>
 
   </div>
 </div>
