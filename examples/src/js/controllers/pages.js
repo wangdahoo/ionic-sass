@@ -56,12 +56,18 @@ define(['app.controllers'], function (appControllers) {
     .controller('PageInputsCtrl', ['$scope', function ($scope) {
       $scope.title = 'Inputs';
       $scope.checkbox = {
-        val: 1
+        red: false,
+        blue: false
       }
 
-      $scope.checkboxChanged = function (val) {
-        console.log(val);
-        $scope.checkbox.val = val;
+      $scope.radio = {
+        color: 'red'
+      }
+
+      $scope.radioChanged = function (option) {
+        angular.forEach($scope.radio, function (v, k) {
+          console.log(v, k)
+        })
       }
 
 

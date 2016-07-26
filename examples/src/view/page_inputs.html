@@ -38,32 +38,64 @@
       </div>
     </div>
 
+
     <!-- Checkbox -->
-    <label class="item item-checkbox">
-      <div class="checkbox checkbox-input-hidden disable-pointer-events checkbox-circle">
-        <input type="checkbox" ng-model="checkbox.val" ng-change="checkboxChanged(1)">
-        <i class="ion" style="font-size: 54px"
-           ng-class="{'ion-ios-circle-outline grey': checkbox.val!=1,
-           'ion-ios-checkmark assertive': checkbox.val==1}"></i>
+    <div class="item">
+      多选
+    </div>
+
+    <label class="item item-checkbox item-icon-left">
+      <div class="checkbox checkbox-input-hidden">
+        <input type="checkbox" ng-model="checkbox.red">
       </div>
 
-      <div class="item-content disable-pointer-events">
+      <div class="item-content">
+        <i class="icon"
+           ng-class="{'ion-ios-circle-outline grey': !checkbox.red,
+           'ion-ios-checkmark assertive': checkbox.red}"></i>
         <span>选项 1</span>
       </div>
     </label>
 
-    <label class="item item-checkbox">
-      <div class="checkbox checkbox-input-hidden disable-pointer-events checkbox-circle">
-        <input type="checkbox" ng-model="checkbox.val" ng-change="checkboxChanged(2)">
-        <i class="ion" style="font-size: 56px"
-           ng-class="{'ion-ios-circle-outline grey': checkbox.val!=2,
-           'ion-ios-checkmark assertive': checkbox.val==2}"></i>
+    <label class="item item-checkbox item-icon-left">
+      <div class="checkbox checkbox-input-hidden">
+        <input type="checkbox" ng-model="checkbox.blue">
       </div>
 
-      <div class="item-content disable-pointer-events">
-        <span>选项 2</span> {{filter.blue}}
+      <div class="item-content">
+        <i class="icon"
+           ng-class="{'ion-ios-circle-outline grey': !checkbox.blue,
+           'ion-ios-checkmark assertive': checkbox.blue}"></i>
+        <span>选项 2</span>
       </div>
     </label>
+
+    <div class="item item-divider"></div>
+
+    <!-- Radio -->
+    <div class="item">
+      单选
+    </div>
+
+    <label class="item item-radio item-icon-right">
+      <input type="radio" ng-model="radio.color" value="red">
+
+      <div class="item-content">
+        Red
+        <i class="icon" ng-class="{'ion-ios-checkmark-empty assertive': radio.color == 'red'}"></i>
+      </div>
+
+    </label>
+
+    <label class="item item-radio item-icon-right">
+      <input type="radio" ng-model="radio.color" value="blue">
+
+      <div class="item-content">
+        Blue
+        <i class="icon" ng-class="{'ion-ios-checkmark-empty assertive': radio.color == 'blue'}"></i>
+      </div>
+    </label>
+
 
   </div>
 </div>
